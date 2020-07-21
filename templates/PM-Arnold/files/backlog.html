@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Agroxa - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <link rel="stylesheet" href="../plugins/morris/morris.css">
+ <!-- DataTables -->
+        <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <!-- Responsive datatable examples -->
+        <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo">
+                        <span>
+                            <img src="assets/images/logo1.png" alt="" height="40" width="100">
+                        </span>
+                        <i>
+                            <img src="assets/images/logo1.png" alt="" height="22">
+                        </i>
+                    </a>
+                </div>
+
+                <nav class="navbar-custom" style="background-color: #8FBC8F;">
+
+                    <ul class="navbar-right d-flex list-inline float-right mb-0" tyle="background-color: #bd6203;">
+                        <li class="dropdown notification-list d-nonse d-sm-block">
+                            <form role="search" class="app-search">
+                                <div class="form-group mb-0"> 
+                                    <input type="text" class="form-control" placeholder="Search.." style="background-color: white; color: black; border: none;">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form> 
+                        </li>
+
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false" tyle="background-color: #bd6203;">
+                                <i class="mdi mdi-bell noti-icon"></i>
+                                <span class="badge badge-pill badge-info noti-icon-badge">3</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                                <!-- task-->
+                                <h6 class="dropdown-item-text">
+                                    Notifications (21)
+                                </h6>
+                                <div class="slimscroll notification-item-list">
+                                    <!-- task-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-flag"></i></div>
+                                        <p class="notify-details">Task update<span class="text-muted">task #5  is now on processing review tab </span></p>
+                                    </a>
+                                    <!-- task-->
+                                   <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-flag"></i></div>
+                                        <p class="notify-details">Task update<span class="text-muted">task #4  is now on processing review tab </span></p>
+                                    </a>
+                                    <!-- task-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-flag"></i></div>
+                                        <p class="notify-details">Task update<span class="text-muted">task #3  is now on  PM processing review tab</span></p>
+                                    </a>
+                                    <!-- task-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-flag"></i></div>
+                                        <p class="notify-details">Task update<span class="text-muted">task #3  is now on  PM processing review tab</span></p>
+                                    </a>
+                                    <!-- task-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <div class="notify-icon bg-info"><i class="mdi mdi-flag"></i></div>
+                                        <p class="notify-details">Task update<span class="text-muted">task #3  has been completed</span></p>
+                                    </a>
+                                </div>
+                                <!-- All-->
+                                <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                    View all <i class="fi-arrow-right"></i>
+                                </a>
+                            </div>        
+                        </li>
+                        <li class="dropdown notification-list">
+                            <div class="dropdown notification-list nav-pro-img">
+                                <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <!-- item-->
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-wallet m-r-5"></i> My Wallet</a>                                   
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                                </div>                                                                    
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0" >
+                        <li class="float-left" >
+                            <button class="button-menu-mobile open-left waves-effect waves-light" style=" background-color: #8FBC8F;">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </li>                        
+                        
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu" >
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            <li class="menu-title">Main</li>
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-home"></i><span class="badge badge-primary float-right">3</span> <span> Dashboard </span>
+                                </a>
+                            </li>
+
+                         <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-table-settings"></i><span> Tables <span class="float-right menu-arrow"><i class="mdi mdi-plus"></i></span> </span></a>
+                                <ul class="submenu">       
+                                    <li><a href="tables-datatable.html">Back log</a></li>
+                                    <li><a href="tables-datatable.html">Processing</a></li>
+                                    <li><a href="tables-datatable.html">For reviw</a></li>
+                                    <li><a href="tables-datatable.html">Client Review</a></li>
+                                    <li><a href="tables-datatable.html">Completed</a></li>
+                                    
+                                </ul>
+                            </li>
+                          
+                           
+
+                          
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                   
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            
+                        <!-- end row -->
+
+                   
+                            <!-- end row -->
+                        
+                                                         
+                               
+                              
+                </div> <!-- content -->
+
+                <footer class="footer">
+                    © 2018 GPG <span class="d-none d-sm-inline-block">- Crafted with <i class="mdi mdi-heart text-danger"></i> by Gillian.</span>
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+            
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metisMenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+
+        <script src="../plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+        <!-- Peity JS -->
+        <script src="../plugins/peity/jquery.peity.min.js"></script>
+
+        <script src="../plugins/morris/morris.min.js"></script>
+        <script src="../plugins/raphael/raphael-min.js"></script>
+
+        <script src="assets/pages/dashboard.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+</html>
